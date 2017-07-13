@@ -1,0 +1,8 @@
+<h1>Saludar</h1>
+<input type="text" [(ngModel)]="nombre" placeholder="Introduce un nombre...">
+<div class="saludo" *ngIf="nombre">
+  Hola {{ nombre }}!!
+  <div>
+    <button (click)="alertSaludar()">Dame alert</button>
+  </div>
+</div>
