@@ -1,5 +1,10 @@
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
 @import '~variables.scss';
 
 html {
     color: #333;
+}
+
+body {
+    padding: 2em;
 }

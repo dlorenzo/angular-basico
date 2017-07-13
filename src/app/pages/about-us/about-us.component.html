@@ -2,9 +2,11 @@
 <p>Información</p>
 
 <div *ngIf="mensajes.length">
-  Mensajes de index:
-
-  <ul>
-    <li *ngFor="let mensaje of mensajes">{{ mensaje }}</li>
-  </ul>
+  <md-list>
+    <h3 md-subheader>Mensajes de index:</h3>
+    <md-list-item *ngFor="let mensaje of mensajes">
+      <md-icon md-list-icon>message</md-icon>
+      <h4 md-line>{{ mensaje }}</h4>
+    </md-list-item>
+  </md-list>
 </div>

@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { MdMenuModule, MdButtonModule, MdIconModule } from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { LayoutRoutingModule } from './layout-routing.module';
 import { NavComponent } from './nav/nav.component';
@@ -15,7 +17,11 @@ import { SaludarModule } from '../pages/saludar/saludar.module';
     LayoutRoutingModule,
     HomeModule,
     AboutUsModule,
-    SaludarModule
+    SaludarModule,
+    MdMenuModule,
+    MdButtonModule,
+    BrowserAnimationsModule,
+    MdIconModule
   ],
   declarations: [NavComponent, ContentComponent, LayoutComponent],
   exports: [LayoutComponent]

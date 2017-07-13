@@ -1,9 +1,8 @@
 <nav>
-  <ul>
-    <li>
-      <a routerLink="/">Home</a>
-      <a routerLink="/about-us">About us</a>
-      <a routerLink="/saludar">Saludar</a>
-    </li>
-  </ul>
+  <button md-icon-button [mdMenuTriggerFor]="menu"><md-icon>menu</md-icon></button>
+  <md-menu #menu="mdMenu">
+    <button md-menu-item routerLink=""><md-icon>home</md-icon> Index</button>
+    <button md-menu-item routerLink="/about-us"><md-icon>info</md-icon> About us</button>
+    <button md-menu-item routerLink="/saludar"><md-icon>person</md-icon> Saludar</button>
+  </md-menu>
 </nav>

@@ -1,8 +1,12 @@
 <h1>Saludar</h1>
-<input type="text" [(ngModel)]="nombre" placeholder="Introduce un nombre...">
+<md-input-container class="input-mensaje">
+        <input mdInput placeholder="Introduce un nombre..." [(ngModel)]="nombre">
+    </md-input-container>  
 <div class="saludo" *ngIf="nombre">
-  Hola {{ nombre }}!!
+  <p>
+    Hola {{ nombre }}!!
+  </p>
   <div>
-    <button (click)="alertSaludar()">Dame alert</button>
+    <button md-raised-button (click)="alertSaludar()">Dame alert</button>
   </div>
 </div>

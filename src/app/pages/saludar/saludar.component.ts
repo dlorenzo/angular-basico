@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {MdDialog, MdDialogRef} from '@angular/material';
+import { DialogComponent } from './dialog/dialog.component';
 
 @Component({
   selector: 'app-saludar',
@@ -9,13 +11,18 @@ export class SaludarComponent implements OnInit {
 
   nombre: string;
 
-  constructor() { }
+  constructor(private dialog: MdDialog) { }
 
   ngOnInit() {
   }
 
   alertSaludar() {
-    alert(this.nombre);
+    const self = this;
+
+    self.dialog.open(DialogComponent, {
+      data: self.nombre,
+    });
+
   }
 
 }

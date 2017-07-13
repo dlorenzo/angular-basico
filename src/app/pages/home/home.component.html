@@ -3,5 +3,10 @@
 <p>{{ bienvenida }}</p>
 
 <h2>Enviar mensaje a sección de 'About us'</h2>
-<input type="text" [(ngModel)]="mensaje" />
-<button (click)="enviarMensaje()">Enviar</button>
+
+<p>
+    <md-input-container class="input-mensaje">
+        <input mdInput placeholder="Mensaje" [(ngModel)]="mensaje">
+    </md-input-container>   
+    <button md-button (click)="enviarMensaje()"><md-icon>send</md-icon></button>
+</p>
