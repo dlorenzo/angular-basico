@@ -1,4 +1,4 @@
-# AngularRutas
+# Angular Básico
 
 - Módulo layout con html de plantilla y definición de rutas.
   - Componente para 'nav'.
